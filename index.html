@@ -24,7 +24,7 @@
         <a class="logo-heder link" href="">Web<span class="web">Studio</span></a>
         <ul class="list menu">
           <li class="menu-item">
-            <a class="link menu-link" href="./index.html">Studio</a>
+            <a class="link menu-link active" href="./index.html">Studio</a>
           </li>
           <li class="menu-item">
             <a class="link menu-link" href="./portfolio.html">Portfolio</a>
@@ -52,7 +52,7 @@
     <section class="section-hero">
       <div class="container">
         <h1 class="main-title">Effective Solutions for Your Business</h1>
-        <button class="main-btn" type="button">Order Service</button>
+        <button class="main-btn" data-modal-open type="button">Order Service</button>
       </div>
     </section>
     <!-- СЕКЦІЯ НАША ПОЛІТИКА -->
@@ -284,14 +284,21 @@
                 height="24">
                 <use href="./images/icons.svg#icon-facebook-1"></use>
               </svg></a></li>
-          <li class="social-item list"><a class="social-link link-footer" href=""><svg class="social-icon"
-                width=width="24" height="24">
+          <li class="social-item list"><a class="social-link link-footer" href=""><svg class="social-icon" width="24"
+                height="24">
                 <use href="./images/icons.svg#icon-linkedin-1"></use>
               </svg></a></li>
         </ul>
       </div>
     </div>
   </footer>
+  <div data-modal class="backdrop is-hidden">
+    <div class="modal"><button type="button" data-modal-close class="modal-close-btn"><svg class="modal-icon" width="8"
+          height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg></button></div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
