@@ -137,13 +137,14 @@ img {
 }
 .active {
   position: relative;
+  color: var(--active-color);
 }
 .active::after {
   content: "";
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: #404bbf;
+  background-color: var(--active-color);
   position: absolute;
   left: 0;
   bottom: -28px;
